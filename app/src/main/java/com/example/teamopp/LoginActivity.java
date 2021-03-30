@@ -14,10 +14,14 @@ import android.widget.Toast;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.firebase.auth.FirebaseAuth;
+// import com.google.firebase.auth.FirebaseAuth;
+// import com.google.firebase.auth.FirebaseUser;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
+
+import com.parse.Parse;
+
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -26,11 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etPassword;
     private Button btnLogin;
 
-    private FirebaseAuth mAuth;
-
-
-
-
+  //  private FirebaseAuth mAuth;
 
 
 
@@ -38,54 +38,12 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+//dfoooejr
 
         // [START initialize_auth]
         // Initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance();
+      //  mAuth = FirebaseAuth.getInstance();
         // [END initialize_auth]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -138,6 +96,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
+
 
     private void loginUser(String username, String password) {
         Log.i(TAG, "Attempting to login user " + username);
