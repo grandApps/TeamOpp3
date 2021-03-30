@@ -30,6 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         date2.setText(currentDateandTime2);
 
-
+//dfoooejr
         }
     }

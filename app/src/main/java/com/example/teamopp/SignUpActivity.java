@@ -53,7 +53,7 @@ public class SignUpActivity extends AppCompatActivity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         passwordagain = findViewById(R.id.passwordagain);
-
+//dfoooejr
 
         signUp.setOnClickListener(v -> {
             if (password.getText().toString().equals(passwordagain.getText().toString()) && !TextUtils.isEmpty(username.getText().toString()))
